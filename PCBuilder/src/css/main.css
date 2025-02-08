@@ -10,11 +10,6 @@ body {
     font-family: "Anonymous Pro", serif;
     font-weight: 400;
     background-color: #0d0d0d;
-    color: #f9f9f9;
-}
-
-text{
-    font-family: "Anonymous Pro", serif;
 }
 
 img {
@@ -34,8 +29,8 @@ button{
     padding: 0 180px 0 180px;
 }
 
-header{
-    padding: 10px 180px 4px 10px;
+header:not(.FAQ){
+    padding: 10px 0;
 }
 
 header nav{
@@ -55,35 +50,66 @@ header nav ul li{
 
 header nav ul li button p:not(.FAQ){
     font-family: "Anonymous Pro", serif;
-    font-size: 18pt;
+    font-size: 18px;
     color: #f9f9f9;
 }
 
+header nav ul li button:hover {
+    border-bottom: 1px solid #f9f9f9;
+}
+
+/* header img{
+    position: ;
+} */
+
 .FAQ{
     font-family: "Anonymous Pro", serif;
-    font-size: 18pt;
-    color: #5EF5E3;
+    font-size: 14pt;
     text-shadow:
     1px 0 1px #5EF5E3, 
     0 1px 1px #5EF5E3, 
     -1px 0 1px #5EF5E3, 
     0 -1px 1px #5EF5E3;
+    color: #5EF5E3;
+    margin-top: 18px;
 }
 
 .button{
     background: #5EF5E3;
     padding: 8px 68px;
+    border: #0d0d0d;
     border-radius: 10px;
-    border-color: #0d0d0d;
     border-width: 1px;
-    font-size: 40pt;
+    font-size: 40px;
     color: #0d0d0d;
-    font-weight: 800;
+    font-weight: bold;
     font-family: "Anonymous Pro", serif;
+    box-shadow: 6px 6px 10px #5EF5E3;
+    transition: all 500ms ease;
+}
+
+.button:hover{
+    cursor: pointer;
+    transform: scale(1.05);
 }
 
 .wrapper{
     background-image: url(/src/img/BackGroundPage1.svg);
     width: 100%;
     background-repeat: no-repeat;
+}
+
+.hero{
+    padding-bottom: 100px;
+}
+
+.hero--info{
+    padding-top: 140px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #f9f9f9;
+}
+
+.top{
+    margin-top: 9px;
 }
