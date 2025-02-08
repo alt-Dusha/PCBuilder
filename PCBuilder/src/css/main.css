@@ -5,41 +5,85 @@
     padding: 0;
     margin-top: 100;
 }
-/* 
+
 body {
     font-family: "Anonymous Pro", serif;
     font-weight: 400;
-    color: #f2f2f2;
+    background-color: #0d0d0d;
+    color: #f9f9f9;
 }
 
-a {
-    text-decoration: none;
+text{
+    font-family: "Anonymous Pro", serif;
 }
 
 img {
     max-width: 100%;
 }
 
-.headerFont{
+button{
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+.container{
+    padding: 0 180px 0 180px;
+}
+
+header{
+    padding: 10px 180px 4px 10px;
+}
+
+header nav{
+    float: right;
+    width: 534px;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li{
+    display: block;
+}
+
+header nav ul li button p:not(.FAQ){
     font-family: "Anonymous Pro", serif;
-    font-size: 18px;
-    color:aqua;
+    font-size: 18pt;
+    color: #f9f9f9;
 }
 
-.wrapper {
-    background: #0D0D0D;
+.FAQ{
+    font-family: "Anonymous Pro", serif;
+    font-size: 18pt;
+    color: #5EF5E3;
+    text-shadow:
+    1px 0 1px #5EF5E3, 
+    0 1px 1px #5EF5E3, 
+    -1px 0 1px #5EF5E3, 
+    0 -1px 1px #5EF5E3;
+}
+
+.button{
+    background: #5EF5E3;
+    padding: 8px 68px;
+    border-radius: 10px;
+    border-color: #0d0d0d;
+    border-width: 1px;
+    font-size: 40pt;
+    color: #0d0d0d;
+    font-weight: 800;
+    font-family: "Anonymous Pro", serif;
+}
+
+.wrapper{
+    background-image: url(/src/img/BackGroundPage1.svg);
     width: 100%;
+    background-repeat: no-repeat;
 }
-
-.buttonSwap{
-    background: none;
-    height: auto;
-    width: auto;
-}
-
-.heroInfo{
-    width: 1400px;
-    height: 700px;
-    margin: auto;
-    margin-top: 40px;
-} */

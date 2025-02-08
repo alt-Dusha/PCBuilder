@@ -7,64 +7,72 @@
     <link rel="stylesheet" href="src/css/main.css">
 </head>
 
-<body  class="wrapper">
-    <!--Page1-->
-    <div>
-        <img class="backGround" src="src/img/BackGroundPage1.svg" alt="Error BackgroundPage1">
+<body>
 
-        <!--Header-->
+    <!--Page1-->
+    <div class="wrapper">
         <header>
-            <img src="src/img/BackGroundHeadPage1.svg" alt="Error BackGroundHeadPage1">
-            <img src="src/icons/Logo.svg" alt="Error Logo">
-            <!--Navigation Panel-->
-            <nav>
-                <ul>
-                    <li>
-                        <img src="src/icons/ImageList.svg">
-                        <a href="#">Готовые сборки</a></li>
-                    <li>
-                        <img src="src/icons/ImageAdd.svg">
-                        <a href="#">Добавить сборку</a></li>
-    
-                    <li>
-                        <img src="src/icons/ImageSupport.svg">
-                        <a href="#">Поддержка</a></li>
-                    <li>
-                        <img src="src/icons/ImageAccount.svg">
-                        <a href="#">Аккаунт</a></li>
-                    <li>
-                        <a href="#">FAQ</a></li>
-                </ul>
-            </nav>
+            <div class="container">
+                <button>
+                    <img src="src/icons/Logo.svg" alt="Error Logo">
+                </button>
+                <nav>
+                    <ul>
+                        <li>
+                            <button>
+                                <img src="src/icons/ImageList.svg">
+                                <p>Готовые<br/>сборки</p>
+                            </button>
+                        </li>
+                        <li>
+                            <button>
+                                <img src="src/icons/ImageAdd.svg">
+                                <p>Добавить<br/>сборку</p>
+                            </button>
+                        </li>
+                        <li>
+                            <button>
+                                <img src="src/icons/ImageSupport.svg">
+                                <p>Поддержка</p>
+                            </button>
+                        </li>
+                        <li>
+                            <button>
+                                <img src="src/icons/ImageAccount.svg">
+                                <p>Аккаунт</p>
+                            </button>
+                        </li>
+                        <li>
+                            <button  class="FAQ">
+                                <p>FAQ</p>
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <img src="src/img/BackGroundHeadPage1.svg" alt="Задний фон первой шапки"/>
         </header>
 
+
         <div class="hero">
-            <img src="src/img/LeftPanel.svg" alt="Error LeftPanel">
-
-            <img src="src/img/BackGroundMessagePage1.svg" alt="Error BackGround">
-
+            <button>
+                <img src="src/icons/ButtonLeftSwap.svg" alt="Error Left ButtonSwap">
+            </button>
+            <div class="hero--info">
+                <h1>Собери мощный ПК сам<br>Быстро<br>Легко<br>Удобно</h1>
+            </div>
+            <button class="button">
+                Собрать
+            </button>
             <button class="buttonSwap">
-                <img src="src/icons/ButtonLeftSwap.svg" alt="Error Left ButtonSwap"></button>
-
-            <h1>Собери мощный ПК сам
-                <ul>
-                    <li>Быстро</li>
-                    <li>Легко</li>
-                    <li>Удобно</li>
-                </ul>
-            </h1>
-            <button>Собрать</button>
-
-            <button class="buttonSwap">
-                <img src="src/icons/ButtonRightSwap.svg" alt="Error RightButtonSwap"></button>
-
-            <img src="src/img/RightPanel.svg" alt="Error RightPanel">
-
-            <img src="src/img/ScrollPanel.svg" alt="Error ScrollPanel">
+                <img src="src/icons/ButtonRightSwap.svg" alt="Error RightButtonSwap">
+            </button>
+            <img src="src/img/BackGroundMessagePage1.svg">
         </div>
     </div>
 
-    <!--Static Elements-->
+
+    <!-- Static Elements
     <div class="static">
         <button class="socialNetwork">
             <img src="src/icons/VK.svg" alt="Error VK Icon">
@@ -80,7 +88,7 @@
         <button class="lenguage">RU</button>
     </div>
 
-    <!--Page2-->
+    Page2
     <div>
         <img class="backGround" src="src/img/BackGroundPage2.svg" alt="Error BackGroundPage2">
         <header>
@@ -99,7 +107,7 @@
         </button>
     </div>
 
-    <!--Page3-->
+    Page3
     <div>
         <img class="backGround" src="src/img/BackGroundPage3.svg" alt="Error BackGroundPage3">
         <header>
@@ -180,7 +188,7 @@
         </div>
     </div>
 
-    <!--Page4-->
+    Page4
     <div>
         <img class="backGround" src="src/img/BackGroundPage4.svg" alt="Error BackGroundPage4">
         <header>
@@ -189,18 +197,18 @@
         </header>
 
         <div class="cardPanel">
-            <img class="card" src="src/img/Card1" alt="Error Card1">
+            <img class="card" src="src/img/Card1.svg" alt="Error Card1">
             <button class="cardInfoButton">i</button>
-            <img class="card" src="src/img/Card2" alt="Error Card2">
+            <img class="card" src="src/img/Card2.svg" alt="Error Card2">
             <button class="cardInfoButton">i</button>
-            <img class="card" src="src/img/Card3" alt="Error Card3">
+            <img class="card" src="src/img/Card3.svg" alt="Error Card3">
             <button class="cardInfoButton">i</button>
         </div>
         
         <img src="src/img/ScrollPanel.svg" alt="Error ScrollPanel">
     </div>
 
-    <!--Footer-->
+    Footer
     <div class="footer">
         <div class="footerInfo">
             <p>Наш сайт специализируется на помощи в самостоятельной сборке  ПК, вам не нужно беспокоиться что что-то не подойдёт друг-другу или что вы не вложитесь в свой бюджет, мы всё посчитали за вас</p>
@@ -210,7 +218,7 @@
             <p>Сбоки:</p>
             <lu>
                 <li><a href="">AMD</a></li>
-                <li><a href="">AMD</a></li>
+                <li><a href="">Intel</a></li>
             </lu>
         </div>
 
@@ -236,6 +244,6 @@
 
         <a class="hyperLink" href="">Поддержать автора</a>
         <a class="hyperLink" href="https://github.com/alt-Dusha/Piano_Android">GitHub</a>
-    </div>
+    </div> -->
 </body>
 </html>
