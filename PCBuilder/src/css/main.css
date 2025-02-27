@@ -1,3 +1,4 @@
+/* General */
 @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&display=swap');
 *
 {
@@ -6,17 +7,16 @@
     margin-top: 100;
 }
 
+span{
+    display:inline-block;
+}
 body {
     font-family: "Anonymous Pro", serif;
     font-weight: 400;
     background-color: #0d0d0d;
-    background-repeat: no-repeat;
-}
-
+    background-repeat: no-repeat;}
 img {
-    max-width: 100%;
-}
-
+    max-width: 100%;}
 button{
     background-color: transparent;
     background-repeat: no-repeat;
@@ -24,48 +24,32 @@ button{
     cursor: pointer;
     overflow: hidden;
     outline: none;
-    transition: all 500ms ease;
-}
+    transition: all 500ms ease;}
 
+/* Haeder */
 .container{
-    padding: 0 180px 0 180px;
-}
-
+    padding: 0 180px 0 180px;}
 header:not(.FAQ){
-    padding: 10px 0;
-}
-
+    padding: 10px 0;}
 header{
     background-image: url(/src/img/BackGroundHeadPage1.svg);
-    background-repeat: no-repeat;
-}
-
+    background-repeat: no-repeat;}
 header nav{
     float: right;
     width: 534px;
-    margin-top: -4px;
-}
-
+    margin-top: -4px;}
 header nav ul{
     list-style: none;
     display: flex;
-    justify-content: space-between;
-}
-
+    justify-content: space-between;}
 header nav ul li{
-    display: block;
-}
-
+    display: block;}
 header nav ul li button p:not(.FAQ){
     font-family: "Anonymous Pro", serif;
     font-size: 18px;
-    color: #f9f9f9;
-}
-
+    color: #f9f9f9;}
 header nav ul li button:hover {
-    border-bottom: 1px solid #f9f9f9;
-}
-
+    border-bottom: 1px solid #f9f9f9;}
 .FAQ{
     font-family: "Anonymous Pro", serif;
     font-size: 14pt;
@@ -75,9 +59,9 @@ header nav ul li button:hover {
     -1px 0 1px #5EF5E3, 
     0 -1px 1px #5EF5E3;
     color: #5EF5E3;
-    margin-top: 18px;
-}
+    margin-top: 18px;}
 
+/* Hero on Page1 */
 .button{
     background: #5EF5E3;
     padding: 8px 68px;
@@ -89,53 +73,57 @@ header nav ul li button:hover {
     font-family: "Anonymous Pro", serif;
     box-shadow: 6px 6px 10px #5EF5E3;
 }
-
 .button:hover{
     cursor: pointer;
     transform: scale(1.05);
 }
 
-.wrapper{
+.page--one{
+    /* Theme */
     background-image: url(/src/img/BackGroundPage1.svg);
-    width: 100%;
     background-repeat: no-repeat;
-}
+
+    /* Size */
+    width: 100%;}
 
 .hero{
-    margin-top: 36px;
+    /* Margins */
+    padding-top:    36px;
     padding-bottom: 100px;
+    padding-inline: 100px;
 
-    background-image: url(/src/img/BackGroundMessagePage1.svg);
-    background-repeat: no-repeat;
-
+    /* Size */
     max-width: 1408;
-    max-height: 708;
-}
+    max-height: 708;}
 
 .hero--info{
-    max-width: 450;
-    max-height: 358;
 
+    /* Font settings */
     color: #f9f9f9;
-    font-size: 25px;
+    font-size: 50px;
     font-weight: 700;
 
-    margin-top: 104px;
-    margin-left: 184px;
+    /* Theme */
+    background-image: url(/src/img/BackGroundMessagePage1.svg);
+    background-repeat: no-repeat;}
+
+.button--swap{
+    border-radius: 30px;
+    box-shadow: 0px 10px 16px #0d0d0d;}
+
+.span--btnswp{
+    display: inline-block;
+    padding-inline: 60px;
+    padding-block: 320px;
 }
 
-.button--swap :not(.hero--info){
-    border-radius: 30px;
-    box-shadow: 0px 10px 16px #0d0d0d;
-
-    margin-top: 184px;
+.button--swap--right{
+    margin-right: 1;
 }
 
 .button--swap:hover{
     cursor: pointer;
-    transform: scale(1.05);
-}
+    transform: scale(1.05);}
 
 .top{
-    margin-top: 9px;
-}
+    margin-top: 9px;}
