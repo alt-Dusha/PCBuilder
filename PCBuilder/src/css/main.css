@@ -25,7 +25,9 @@ button{
     overflow: hidden;
     outline: none;
     transition: all 500ms ease;}
-
+button:hover:not(.button){
+    cursor: pointer;
+    transform: scale(1.05);}
 /* Haeder */
 .container{
     padding: 0 180px 0 180px;}
@@ -63,6 +65,7 @@ header nav ul li button:hover {
 
 /* Hero on Page1 */
 .button{
+    display: block;
     background: #5EF5E3;
     padding: 8px 68px;
     border: 1px solid #0d0d0d;
@@ -87,25 +90,28 @@ header nav ul li button:hover {
     width: 100%;}
 
 .hero{
+    display: inline-flex;
     /* Margins */
     padding-top:    36px;
     padding-bottom: 100px;
-    padding-inline: 100px;
 
     /* Size */
     max-width: 1408;
     max-height: 708;}
 
 .hero--info{
-
     /* Font settings */
     color: #f9f9f9;
     font-size: 50px;
-    font-weight: 700;
+    font-weight: 600;
 
     /* Theme */
     background-image: url(/src/img/BackGroundMessagePage1.svg);
-    background-repeat: no-repeat;}
+    background-repeat: no-repeat;
+
+    /* Max size seting */
+    max-width: 1400px;
+    max-height: 700px;}
 
 .button--swap{
     border-radius: 30px;
@@ -117,13 +123,16 @@ header nav ul li button:hover {
     padding-block: 320px;
 }
 
-.button--swap--right{
-    margin-right: 1;
+.span--btnswprght{
+    display: inline-flex;
 }
 
-.button--swap:hover{
-    cursor: pointer;
-    transform: scale(1.05);}
+
+
+.panel--pageone{
+    display: inline-block;
+    padding-top: 100px;
+}
 
 .top{
     margin-top: 9px;}
