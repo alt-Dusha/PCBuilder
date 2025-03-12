@@ -90,7 +90,9 @@ header nav ul li button:hover {
     width: 100%;}
 
 .hero{
+    position: relative;
     display: inline-flex;
+    
     /* Margins */
     padding-top:    36px;
     padding-bottom: 100px;
@@ -101,38 +103,60 @@ header nav ul li button:hover {
 
 .hero--info{
     /* Font settings */
+
     color: #f9f9f9;
     font-size: 50px;
     font-weight: 600;
+
 
     /* Theme */
     background-image: url(/src/img/BackGroundMessagePage1.svg);
     background-repeat: no-repeat;
 
     /* Max size seting */
-    max-width: 1400px;
-    max-height: 700px;}
+    min-width: 1428px;
+    min-height: 728px;
+    max-width: 1428px;
+    max-height: 728px;}
 
-.button--swap{
+.button--swap{  
     border-radius: 30px;
     box-shadow: 0px 10px 16px #0d0d0d;}
 
 .span--btnswp{
     display: inline-block;
+    position: absolute;
     padding-inline: 60px;
     padding-block: 320px;
 }
 
 .span--btnswprght{
-    display: inline-flex;
+    display: inline-block;
+    position: absolute;
+    padding-left: 650px;
+    padding-block: 320px;
 }
-
-
 
 .panel--pageone{
     display: inline-block;
+    padding-left: 184px;
     padding-top: 100px;
 }
 
 .top{
     margin-top: 9px;}
+
+.button--position{
+    padding: 80px;
+}
+
+.tab--switching{
+    background-image: url(/src/img/TabSwitching/Background.svg);
+    background-repeat: no-repeat;
+}
+
+.tab--switching img{
+    
+    padding-left: 2px;
+    padding-top: 6px;
+}
