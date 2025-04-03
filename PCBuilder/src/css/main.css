@@ -6,11 +6,18 @@
     padding: 0;
     margin-top: 100;
 }
+::-webkit-scrollbar {
+    width: 0;}
+li{
+    margin: 0;
+    list-style: none;
+    padding: none;}
 
 span{
     display:inline-block;
 }
-body {
+body, html {
+    margin: 0;
     font-family: "Anonymous Pro", serif;
     font-weight: 400;
     background-color: #0d0d0d;
@@ -34,7 +41,7 @@ button:hover:not(.button){
 header:not(.FAQ){
     padding: 10px 0;}
 header{
-    background-image: url(/src/img/BackGroundHeadPage1.svg);
+    background-image: url(/src/img/Page1/BackGroundHead.svg);
     background-repeat: no-repeat;}
 header nav{
     float: right;
@@ -61,9 +68,11 @@ header nav ul li button:hover {
     -1px 0 1px #5EF5E3, 
     0 -1px 1px #5EF5E3;
     color: #5EF5E3;
-    margin-top: 18px;}
+    margin-top: 26px;}
+.top{
+    margin-top: 10px;}
 
-/* Hero on Page1 */
+/* Classic button "Собрать" */
 .button{
     display: block;
     background: #5EF5E3;
@@ -74,126 +83,140 @@ header nav ul li button:hover {
     font-size: 40px;
     font-weight: bold;
     font-family: "Anonymous Pro", serif;
-    box-shadow: 6px 6px 10px #5EF5E3;
-}
+    box-shadow: 6px 6px 10px #5EF5E3;}
 .button:hover{
     cursor: pointer;
-    transform: scale(1.05);
-}
-
+    transform: scale(1.05);}
+/* Page 1 */
 .page--one{
-    /* Theme */
-    background-image: url(/src/img/BackGroundPage1.svg);
+    width: 1920px;
+    height: 1080px;
+    background-image: url(/src/img/Page1/BackGround.svg);
+    background-repeat: no-repeat;}
+.hero--1{
+    padding: 100px 260px;
+    width: 1400px;
+    height: 700px;}
+.slide:not(.button){
+    position: absolute;
+    opacity: 0;
+    inset: 0;
+    left: 260px;
+    top: 195px;
+    display: block;}
+.slide--1{
+    background-image: url(/src/img/Page1/TabPanel_1.svg);
+    box-shadow: 0px 0px 10px 4px #016CFD;
     background-repeat: no-repeat;
-
-    /* Size */
-    width: 100%;}
-
-.hero{
-    position: relative;
-    display: inline-flex;
-    
-    /* Margins */
-    padding-top:    36px;
-    padding-bottom: 100px;
-
-    /* Size */
-    max-width: 1408;
-    max-height: 708;}
-
-.hero--info{
-    /* Font settings */
-
+    width: 1400px;
+    height: 700px;
+    border-radius: 10px;
+    background-size: 100%;}
+.slide--1--text{
+    margin: 100px 770px 100px 180px;}
+.slide--1--text p{
     color: #f9f9f9;
     font-size: 50px;
-    font-weight: 600;
-
-
-    /* Theme */
-    background-image: url(/src/img/BackGroundMessagePage1.svg);
+    width: 450px;
+    height: 358px;}
+.button--position--1{
+    position: relative;
+    padding-inline: 80px;
+    padding-top: 82px;}
+.slide--2{
+    background-image: url(/src/img/Page1/TabPanel_2.svg);
+    box-shadow: 0px 0px 10px 4px #FE48F5;
     background-repeat: no-repeat;
-
-    /* Max size seting */
-    min-width: 1428px;
-    min-height: 728px;
-    max-width: 1428px;
-    max-height: 728px;}
-
-.button--swap{  
-    border-radius: 30px;
-    box-shadow: 0px 10px 16px #0d0d0d;}
-
-.span--btnswp{
-    display: inline-block;
-    position: absolute;
-    padding-inline: 60px;
-    padding-block: 320px;
-}
-
-.span--btnswprght{
-    display: inline-block;
-    position: absolute;
-    padding-left: 650px;
-    padding-block: 320px;
-}
-
-.panel--pageone{
-    display: inline-block;
-    padding-left: 184px;
-    padding-top: 100px;
-}
-
-.top{
-    margin-top: 9px;}
-
-.button--position{
-    padding: 80px;
-}
-
-.tab--switching{
-    background-image: url(/src/img/TabSwitching/Background.svg);
+    width: 1400px;
+    height: 700px;
+    border-radius: 10px;
+    background-size: 100%;}
+.slide--3{
+    background-image: url(/src/img/Page1/TabPanel_3.svg);
+    box-shadow: 0px 0px 10px 4px #FDFDFD;
     background-repeat: no-repeat;
-}
+    width: 1400px;
+    height: 700px;
+    border-radius: 10px;
+    background-size: 100%;}
+.slide[main-activ-slide]{
+    opacity: 1;
+    z-index: 1;}
+.slider--btn{
+    position: absolute;
+    z-index: 2;
+    opacity: 1;
+    font-size: large;
+    top: 50%;
+    color: black;
+    border: none;
+    background-color: rgb(255, 255, 255, .2);}
+.slider--btn.prev{
+    left: 260px;}
+.slider--btn.next{
+    right: 260px;}
 
-.tab--switching img{
-    
-    padding-left: 2px;
-    padding-top: 6px;
-}
+/* Static Element */
+.socialNetwork img{
+    position: sticky;
+    top: 0;}
+.language{
+    font-size: 30px;
+    color: #5EF5E3;}
 
+/* Page 2 */
 .page--two{
-    background-image: url(/src/img/BackGroundPage2.svg);
-}
-
+    background-image: url(/src/img/Page2/BackGround.svg);
+    width: 1920px;
+    height: 1080px;}
+.header--page_2{
+    background-image: url(/src/img/Page2/BackGroundHead.svg);
+    background-repeat: no-repeat;}
 .headFont{
     font-size: 60px;
     font-weight: 700;
     color: #f9f9f9;
-    text-align: center;
-    background-image: url(/src/img/BackGroundHeadPage2.svg);
-}
-
+    text-align: center;}
+.hero--page2{
+    background-image: url(/src/img/Page2/BackGroundMessage.svg);
+    background-repeat: no-repeat;
+    width: 836px;
+    height: 660px;}
+.header--page_2 h1{
+    padding: 32px 205px;}
 .hero--info--page2{
+    margin: 150px 60px 190px 90px;
+    text-align: left;
     white-space: 40px;
     font-size: 40px;
-    padding-top: 160px;
-    padding-left: 96px;
-    color: #212121;
-    text-align: left;
-    align-items: center;
-}
+    width: 692px;
+    height: 312px;
+    color: #212121;}
+.page--two--hero{
+    width: 1920px;
+    display: inline-flex;
+    justify-content: space-around;
+    margin-top: 14px;}
+.btn--search{
+    width: 260px;
+    height: 66px;
+    padding: 6px 20px 8px 50px;}
+.btn--search span p{
+    font-size: 46px;}
+.button--position--search{
+    margin-top: 568px;}
+.btn--search img{
+    padding-top: 4px;}
 
-.lenguage{
-    font-size: 30px;
-    color: #5EF5E3;
-}
-
-.hero--page2{
-    background-image: url(/src/img/BackGroundMessagePage2.svg);
-    background-repeat: no-repeat;
-    min-width: 660px;
-    min-height: 840px;
-    margin-left: 190px;
-    margin-top: 10px;
-    margin-right: 896px;
-}
+/* Page 3 */
+.page--three{
+    width: 1920px;
+    height: 1080px;
+    background-image: url(/src/img/Page3/BackGround.svg);
+    background-repeat: no-repeat;}
+.header--page_3{
+    width: 1920px;
+    background-image: url(/src/img/Page3/BackGroundHead.svg);
+    }
+.header--page_3 h1{
+    padding: 26px 714px 24px;}

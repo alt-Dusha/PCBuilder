@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PCBuilder</title>
     <link rel="stylesheet" href="src/css/main.css">
+    <script src="src/function/index.js" defer></script>
 </head>
 
 <body>
@@ -52,36 +53,36 @@
             </div>
         </header>
         
-        <div class="hero">
-            <button><img src="src/img/LeftPanel.svg"/></button>
-            <div class="hero--info">
-                <span class="span--btnswp">
-                    <button class="button--swap"><img src="src/icons/ButtonLeftSwap.svg" alt="Error Left ButtonSwap"></button>
-                </span>
-                <div class="panel--pageone">
-                    <span>
+        <div class="hero--1">
+            <!-- Slider on page one, i try to do this, ye -->
+            <button class="slider--btn prev" onclick="onPrev">&#171;</button>
+            <button class="slider--btn next" onclick="onNext">&#187;</button>
+            <ul class="carousel">
+                <li class="slide--1 slide" main-activ-slide>
+                    <div class="slide--1--text">
                         <p>Собери мощный ПК<br><br>-Быстро<br><br>-Легко<br><br>-Удобно</p>
-                    </span>
-                    <div class="button--position">
-                        <button class="button">Собрать</button>
+                        <div class="button--position--1">
+                            <button class="button">Собрать</button>
+                        </div>
                     </div>
-                </div>
-                <span class="span--btnswprght">
-                    <button class="button--swap--right"><img src="src/icons/ButtonRightSwap.svg" alt="Error RightButtonSwap"></button>
-                </span>
-            </div>
-            <button><img src="src/img/RightPanel.svg"/></button>
-        </div>
-        <div class="tab--switching">
-            <img src="src/img/TabSwitching/MinCircle.svg">
-            <img src="src/img/TabSwitching/MaxCircle.svg">
-            <img src="src/img/TabSwitching/MinCircle.svg">
+                </li>
+                <li class="slide--2 slide">
+                    <div>
+                        <a class="first--word">Думаешь</a>
+                        <a class="second--word">это</a>
+                        <a class="third--word">так</a>
+                        <a class="final--word">СЛОЖНО?</a>
+                    </div>
+                </li>
+                <li class="slide--3 slide">
+                    <a>Не устал сидеть за ноутбуком?</a>
+                </li>
+            </ul>
         </div>
     </div>
 
 
-    <!-- Static Elements -->
-    <div class="static">
+    <!-- <div class="static">
         <button class="socialNetwork">
             <img src="src/icons/VK.svg" alt="Error VK Icon">
         </button>
@@ -93,44 +94,40 @@
         <button class="socialNetwork">
             <img src="src/icons/Watsapp.svg" alt="Error Watsapp Icon">
         </button>
-        <button class="lenguage">Ru</button>
-    </div>
+        <button class="language">Ru</button>
+    </div> -->
 
-    <!-- Page2 -->
+    <!-- Page 2 -->
     <div class="page--two">
-        <header>
+        <div class="header--page_2">
             <h1 class="headFont">Лучшие комплектующие для вашего идеального ПК<br>Только топовые бренды и модели!</h1>
-        </header>
-        <div>
+        </div>
+
+        <div class="page--two--hero">
             <div class="hero--page2">
                 <p class="hero--info--page2">    
                     &emsp;&ensp;В нашем онлайн сборщике ПК<br>представлены только самые<br>актуальные и производительные<br>комплектующие от проверенных<br>производителей. Мы тщательно<br>отбираем каждую деталь, чтобы<br>вам не пришлось сомневаться в<br>своем выборе.
                 </p>
             </div>
-            
+            <div class="button--position--search">
+                <button class="button btn--search">
+                    <span><p>Поиск</p></span>
+                    <img src="src/icons/Search.svg" alt="Error Search">
+                </button>
+            </div>
         </div>
-        <button class="button">
-            <span><p>Поиск</p></span>
-            <img src="src/icons/Search.svg" alt="Error Search">
-        </button>
     </div>
 
-    <!-- Page3 -->
-    <div>
-        <img class="backGround" src="src/img/BackGroundPage3.svg" alt="Error BackGroundPage3">
-        <header>
-            <img src="src/img/BackGroundHeadPage3.svg" alt="Error BackGroundHeadPage3">
+    <div class="page--three">
+        <div class="header--page_3">
             <h1 class="headFont">Последние сбоки</h1>
-        </header>
+        </div>
 
         <div class="hero">
-            <img src="src/img/BackGroundMessagePage3.svg" alt="Error BackGroundMessagePage3">
-
             <div class="price">
                 <span class="propertyOnPrice">Цена:</span>
                 <span class="propertyOnPrice">74299</span>
             </div>
-
             <div class="propertyBar">
                 <div class="specRow">
                     <span class="property">Процессор:</span>
@@ -165,14 +162,10 @@
                     <span class="value">MSI PRO H610M-E DDR4</span>
                 </div>
             </div>
-
-            <img src="src/img/PCPicture.svg" alt="Error PCPicture">
-
             <div class="author">
                     <span>Автор:</span>
                     <span>skip</span>
             </div>
-
             <div class="score">
                 <ul>
                     <span>123</span>
@@ -196,7 +189,6 @@
         </div>
     </div>
 
-    <!-- Page4 -->
     <div>
         <img class="backGround" src="src/img/BackGroundPage4.svg" alt="Error BackGroundPage4">
         <header>
@@ -216,7 +208,6 @@
         <img src="src/img/ScrollPanel.svg" alt="Error ScrollPanel">
     </div>
 
-    <!-- Footer -->
     <div class="footer">
         <div class="footerInfo">
             <p>Наш сайт специализируется на помощи в самостоятельной сборке  ПК, вам не нужно беспокоиться что что-то не подойдёт друг-другу или что вы не вложитесь в свой бюджет, мы всё посчитали за вас</p>
