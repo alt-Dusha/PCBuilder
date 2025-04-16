@@ -4,18 +4,16 @@
 {
     margin: 0;
     padding: 0;
-    margin-top: 100;
 }
+
 ::-webkit-scrollbar {
     width: 0;}
 li{
     margin: 0;
     list-style: none;
     padding: none;}
-
 span{
-    display:inline-block;
-}
+    display:inline-block;}
 body, html {
     margin: 0;
     font-family: "Anonymous Pro", serif;
@@ -35,7 +33,10 @@ button{
 button:hover:not(.button){
     cursor: pointer;
     transform: scale(1.05);}
-/* Haeder */
+a {
+    color:#5EF5E3;
+}
+    /* Haeder */
 .container{
     padding: 0 180px 0 180px;}
 header:not(.FAQ){
@@ -76,7 +77,7 @@ header nav ul li button:hover {
 .button{
     display: block;
     background: #5EF5E3;
-    padding: 8px 68px;
+    padding: 4% 18%;
     border: 1px solid #0d0d0d;
     border-radius: 10px;
     border-color: #0d0d0d;
@@ -117,6 +118,7 @@ header nav ul li button:hover {
 .slide--1--text p{
     color: #f9f9f9;
     font-size: 50px;
+    font-weight: 700;
     width: 450px;
     height: 358px;}
 .button--position--1{
@@ -197,14 +199,17 @@ header nav ul li button:hover {
     display: inline-flex;
     justify-content: space-around;
     margin-top: 14px;}
-.btn--search{
-    width: 260px;
-    height: 66px;
-    padding: 6px 20px 8px 50px;}
-.btn--search span p{
-    font-size: 46px;}
+
+/* Button to Search part of PC */
 .button--position--search{
-    margin-top: 568px;}
+        margin-top: 568px;}
+.btn--search{
+    display: inline-flex;
+    width: 250px;
+    height: 66px;}
+.btn--search p{
+    font-size: 46px;}
+
 .btn--search img{
     padding-top: 4px;}
 
@@ -216,7 +221,131 @@ header nav ul li button:hover {
     background-repeat: no-repeat;}
 .header--page_3{
     width: 1920px;
-    background-image: url(/src/img/Page3/BackGroundHead.svg);
-    }
+    background-image: url(/src/img/Page3/BackGroundHead.svg);}
 .header--page_3 h1{
     padding: 26px 714px 24px;}
+.page--three--hero{
+    background-image: url(/src/img/Page3/BackGroundMessage.svg);
+    background-repeat: no-repeat;
+
+    border-radius: 15px;
+    margin-inline: 260px;
+    margin-top: 1%;
+
+    width: 1400px;
+    height: 700px;
+    box-shadow: 0px 0px 10px 4px #5EF5E3;
+}
+.property--bar{
+    color:#f9f9f9;
+    display: table-column;
+    padding-block: 4%;
+    width: 750px;
+}
+.price{
+    margin-top: 3%;
+    margin-left: 3.5%;
+
+    display: inline-flex;
+    justify-content: space-evenly;
+
+    align-items: center;
+    width: 268px;
+    height: 100px;
+}
+
+.property--bar div{
+    font-family: Inter;
+}
+
+.price p{
+    font-size: 40px;
+    color: #f9f9f9;
+    font-weight: bold;
+}
+
+.property{
+    padding-left: 20px;
+    font-weight: 900;
+    font-size: 20px;
+    padding-bottom: 20px;
+    padding-right: 60px;
+    width: 168px;
+}
+
+.value{
+    font-weight: 500;
+    padding-top: 3px;
+    padding-bottom: 20px;
+}
+
+.radioButtonPanel span{
+    color: #f9f9f9;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.page--three--hero--info{
+    width: 1210px;
+    height: 442px;
+    margin-left: 7%;
+    margin-right: 6.55%;
+    display: flex;
+}
+
+.author{
+    bottom: 0px;
+    display: flex;
+    width: 194px;
+    height: 42px;
+    background-color: #5EF5E3;
+    align-content: center;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    justify-content: space-around;
+    font-size: 30px;
+}
+
+.score{
+    display: inline-flex;
+    justify-content: space-around;
+    background-color: #5EF5E3;
+    align-content: center;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 102px;
+    font-size: 20px;
+}
+
+.score p{
+    width: 36px;
+    height: 24px;
+    padding-block: 8px;
+}
+
+.information--about--build{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 1400px;
+    padding-top: 74px;
+    font-family: Inter;
+}
+.like{
+    width: 34px;
+    height: 36px;
+}
+.like img{
+    padding-block: 4px;
+}
+
+/* Page 4 */
+.page--four{
+    width: 1920px;
+    height: 1080px;
+}
+
+/* Footer */
+.footer{
+    width: 1920px;
+    height: 300px;
+}
