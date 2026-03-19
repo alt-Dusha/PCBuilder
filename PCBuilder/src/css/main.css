@@ -279,11 +279,20 @@ header nav ul li button:hover {
     padding-bottom: 20px;
 }
 
+.radioButtonPanel {
+    width: 310px;
+    height: 56px;
+    display: block;
+    justify-content: space-between;
+}
+
 .radioButtonPanel span{
     color: #f9f9f9;
     font-weight: 700;
     font-size: 40px;
+    margin-bottom: -16px;
 }
+
 
 .page--three--hero--info{
     width: 1210px;
@@ -336,6 +345,50 @@ header nav ul li button:hover {
 }
 .like img{
     padding-block: 4px;
+}
+/* Switcher */
+
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 102px;
+    height: 48px;
+}
+
+/* Hide default checkbox */
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The track */
+.slider {
+    cursor: pointer;
+    background-color: #0d0d0d;
+    border: 6px solid #5EF5E3;
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+}
+
+/* The circular slider */
+.slider::before {
+    content: "";
+    margin-bottom: 50px;
+    position: absolute;
+    top: 16px;
+    left: -1px;
+    height: 56px;
+    width: 56px;
+    background-color: #5EF5E3;
+    border-radius: 50%;
+    border: 2px solid #0d0d0d;
+    transition: transform 0.3s;
+}
+
+.toggle-switch input:checked+.slider::before {
+    transform: translateX(56px);
 }
 
 /* Page 4 */
